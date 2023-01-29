@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E3C2C78A-96E3-48A4-BCF6-E020255B4107}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlipFlop.Domain", "src\FlipFlop.Domain\FlipFlop.Domain.csproj", "{5CDEE755-787F-4850-A4CE-347DB1A96F77}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlipFlop.EfCore", "src\FlipFlop.EfCore\FlipFlop.EfCore.csproj", "{9EA8B844-076E-493D-98C5-DCB23093B9FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlipFlop.Services", "src\FlipFlop.Services\FlipFlop.Services.csproj", "{B55BE5FC-4CEA-4FC4-ADC4-ED13F65DDAB7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlipFlop.MVC", "src\FlipFlop.MVC\FlipFlop.MVC.csproj", "{9F8A64DA-A961-40EB-A7C2-1B640E047635}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlipFlop.Helpers", "src\FlipFlop.Helpers\FlipFlop.Helpers.csproj", "{0DE20781-E484-47FF-9B8B-938DAADD72F7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5CDEE755-787F-4850-A4CE-347DB1A96F77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CDEE755-787F-4850-A4CE-347DB1A96F77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CDEE755-787F-4850-A4CE-347DB1A96F77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CDEE755-787F-4850-A4CE-347DB1A96F77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EA8B844-076E-493D-98C5-DCB23093B9FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EA8B844-076E-493D-98C5-DCB23093B9FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EA8B844-076E-493D-98C5-DCB23093B9FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EA8B844-076E-493D-98C5-DCB23093B9FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B55BE5FC-4CEA-4FC4-ADC4-ED13F65DDAB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B55BE5FC-4CEA-4FC4-ADC4-ED13F65DDAB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B55BE5FC-4CEA-4FC4-ADC4-ED13F65DDAB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B55BE5FC-4CEA-4FC4-ADC4-ED13F65DDAB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F8A64DA-A961-40EB-A7C2-1B640E047635}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F8A64DA-A961-40EB-A7C2-1B640E047635}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F8A64DA-A961-40EB-A7C2-1B640E047635}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F8A64DA-A961-40EB-A7C2-1B640E047635}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DE20781-E484-47FF-9B8B-938DAADD72F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DE20781-E484-47FF-9B8B-938DAADD72F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DE20781-E484-47FF-9B8B-938DAADD72F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DE20781-E484-47FF-9B8B-938DAADD72F7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5CDEE755-787F-4850-A4CE-347DB1A96F77} = {E3C2C78A-96E3-48A4-BCF6-E020255B4107}
+		{9EA8B844-076E-493D-98C5-DCB23093B9FB} = {E3C2C78A-96E3-48A4-BCF6-E020255B4107}
+		{B55BE5FC-4CEA-4FC4-ADC4-ED13F65DDAB7} = {E3C2C78A-96E3-48A4-BCF6-E020255B4107}
+		{9F8A64DA-A961-40EB-A7C2-1B640E047635} = {E3C2C78A-96E3-48A4-BCF6-E020255B4107}
+		{0DE20781-E484-47FF-9B8B-938DAADD72F7} = {E3C2C78A-96E3-48A4-BCF6-E020255B4107}
+	EndGlobalSection
+EndGlobal
