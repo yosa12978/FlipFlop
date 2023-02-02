@@ -2,6 +2,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\FlipFlop.Domain\FlipFlop.Domain.csproj" />
+    <ProjectReference Include="..\FlipFlop.Helpers\FlipFlop.Helpers.csproj" />
   </ItemGroup>
 
   <ItemGroup>

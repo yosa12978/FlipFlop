@@ -7,7 +7,7 @@ namespace FlipFlop.EfCore.Repositories
 {
     public class BaseRepository<T, ID> : IBaseRepository<T, ID> where T : BaseModel<ID>
     {
-        private readonly FlipFlopContext _db;
+        internal readonly FlipFlopContext _db;
         public BaseRepository(FlipFlopContext db) 
         {
             _db = db;
