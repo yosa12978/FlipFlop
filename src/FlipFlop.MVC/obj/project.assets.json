@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "Humanizer.Core/2.14.1": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/_._": {}
+        },
+        "runtime": {
+          "lib/net6.0/Humanizer.dll": {}
+        }
+      },
       "Microsoft.Data.Sqlite.Core/7.0.2": {
         "type": "package",
         "dependencies": {
@@ -49,6 +58,24 @@
         },
         "runtime": {
           "lib/netstandard2.0/_._": {}
+        }
+      },
+      "Microsoft.EntityFrameworkCore.Design/7.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Humanizer.Core": "2.14.1",
+          "Microsoft.EntityFrameworkCore.Relational": "7.0.2",
+          "Microsoft.Extensions.DependencyModel": "7.0.0",
+          "Mono.TextTemplating": "2.2.1"
+        },
+        "compile": {
+          "lib/net6.0/_._": {}
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.EntityFrameworkCore.Design.dll": {}
+        },
+        "build": {
+          "build/net6.0/Microsoft.EntityFrameworkCore.Design.props": {}
         }
       },
       "Microsoft.EntityFrameworkCore.InMemory/7.0.2": {
@@ -101,6 +128,18 @@
         },
         "runtime": {
           "lib/net6.0/Microsoft.EntityFrameworkCore.Sqlite.dll": {}
+        }
+      },
+      "Microsoft.EntityFrameworkCore.Tools/7.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Design": "7.0.2"
+        },
+        "compile": {
+          "lib/net6.0/_._": {}
+        },
+        "runtime": {
+          "lib/net6.0/_._": {}
         }
       },
       "Microsoft.Extensions.Caching.Abstractions/7.0.0": {
@@ -273,6 +312,18 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
+      "Mono.TextTemplating/2.2.1": {
+        "type": "package",
+        "dependencies": {
+          "System.CodeDom": "4.4.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Mono.TextTemplating.dll": {}
+        }
+      },
       "SQLitePCLRaw.bundle_e_sqlite3/2.1.2": {
         "type": "package",
         "dependencies": {
@@ -412,6 +463,15 @@
           "lib/net6.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
+      "System.CodeDom/4.4.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.CodeDom.dll": {}
+        }
+      },
       "System.Memory/4.5.3": {
         "type": "package",
         "compile": {
@@ -509,6 +569,20 @@
           "bin/placeholder/FlipFlop.Helpers.dll": {}
         }
       },
+      "FlipFlop.Migrations/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "FlipFlop.EfCore": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "7.0.2"
+        },
+        "compile": {
+          "bin/placeholder/FlipFlop.Migrations.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FlipFlop.Migrations.dll": {}
+        }
+      },
       "FlipFlop.Services/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -527,6 +601,24 @@
     }
   },
   "libraries": {
+    "Humanizer.Core/2.14.1": {
+      "sha512": "lQKvtaTDOXnoVJ20ibTuSIOf2i0uO0MPbDhd1jm238I+U/2ZnRENj0cktKZhtchBMtCUSRQ5v4xBCUbKNmyVMw==",
+      "type": "package",
+      "path": "humanizer.core/2.14.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "humanizer.core.2.14.1.nupkg.sha512",
+        "humanizer.core.nuspec",
+        "lib/net6.0/Humanizer.dll",
+        "lib/net6.0/Humanizer.xml",
+        "lib/netstandard1.0/Humanizer.dll",
+        "lib/netstandard1.0/Humanizer.xml",
+        "lib/netstandard2.0/Humanizer.dll",
+        "lib/netstandard2.0/Humanizer.xml",
+        "logo.png"
+      ]
+    },
     "Microsoft.Data.Sqlite.Core/7.0.2": {
       "sha512": "JeATjPNhC0I4g44MRlG9xJ0hbOYgizlV/UAJXzzSGjVPn9ohwr8yO2SrC3jhvTwD3wpL/MrAck/aORhLM/ayoQ==",
       "type": "package",
@@ -586,6 +678,21 @@
         "microsoft.entityframeworkcore.analyzers.nuspec"
       ]
     },
+    "Microsoft.EntityFrameworkCore.Design/7.0.2": {
+      "sha512": "gUUucCoJci8BBxOcU/XuuldUZpCo5Od8lwFEzZ5WywnvDfSmARnXNe97BpjL+JiBhSrnuTxW/wCJjWqPonXXHQ==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.design/7.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "build/net6.0/Microsoft.EntityFrameworkCore.Design.props",
+        "lib/net6.0/Microsoft.EntityFrameworkCore.Design.dll",
+        "lib/net6.0/Microsoft.EntityFrameworkCore.Design.xml",
+        "microsoft.entityframeworkcore.design.7.0.2.nupkg.sha512",
+        "microsoft.entityframeworkcore.design.nuspec"
+      ]
+    },
     "Microsoft.EntityFrameworkCore.InMemory/7.0.2": {
       "sha512": "LmkEuuNxkC//OInidXb8ebD5WfJ9cAFfNPUrkNI4FRP0GAHLQcpRO43pobWCHPbKpmJkGMB7YlqXcWtfOEMRdQ==",
       "type": "package",
@@ -639,6 +746,31 @@
         "lib/net6.0/Microsoft.EntityFrameworkCore.Sqlite.xml",
         "microsoft.entityframeworkcore.sqlite.core.7.0.2.nupkg.sha512",
         "microsoft.entityframeworkcore.sqlite.core.nuspec"
+      ]
+    },
+    "Microsoft.EntityFrameworkCore.Tools/7.0.2": {
+      "sha512": "0Jx9feeGsUUlI+PEFkADyfQrGU+UIYh9N1I8ZO6X5bjYSKL2V1empkGTupvfrI7S9h4uA7aY8GQpjkCmIep7dg==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.tools/7.0.2",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/net6.0/_._",
+        "microsoft.entityframeworkcore.tools.7.0.2.nupkg.sha512",
+        "microsoft.entityframeworkcore.tools.nuspec",
+        "tools/EntityFrameworkCore.PS2.psd1",
+        "tools/EntityFrameworkCore.PS2.psm1",
+        "tools/EntityFrameworkCore.psd1",
+        "tools/EntityFrameworkCore.psm1",
+        "tools/about_EntityFrameworkCore.help.txt",
+        "tools/init.ps1",
+        "tools/net461/any/ef.exe",
+        "tools/net461/win-arm64/ef.exe",
+        "tools/net461/win-x86/ef.exe",
+        "tools/netcoreapp2.0/any/ef.dll",
+        "tools/netcoreapp2.0/any/ef.runtimeconfig.json"
       ]
     },
     "Microsoft.Extensions.Caching.Abstractions/7.0.0": {
@@ -990,6 +1122,19 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "Mono.TextTemplating/2.2.1": {
+      "sha512": "KZYeKBET/2Z0gY1WlTAK7+RHTl7GSbtvTLDXEZZojUdAPqpQNDL6tHv7VUpqfX5VEOh+uRGKaZXkuD253nEOBQ==",
+      "type": "package",
+      "path": "mono.texttemplating/2.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net472/Mono.TextTemplating.dll",
+        "lib/netstandard2.0/Mono.TextTemplating.dll",
+        "mono.texttemplating.2.2.1.nupkg.sha512",
+        "mono.texttemplating.nuspec"
+      ]
+    },
     "SQLitePCLRaw.bundle_e_sqlite3/2.1.2": {
       "sha512": "ilkvNhrTersLmIVAcDwwPqfhUFCg19Z1GVMvCSi3xk6Akq94f4qadLORQCq/T8+9JgMiPs+F/NECw5uauviaNw==",
       "type": "package",
@@ -1077,6 +1222,27 @@
         "lib/netstandard2.0/SQLitePCLRaw.provider.e_sqlite3.dll",
         "sqlitepclraw.provider.e_sqlite3.2.1.2.nupkg.sha512",
         "sqlitepclraw.provider.e_sqlite3.nuspec"
+      ]
+    },
+    "System.CodeDom/4.4.0": {
+      "sha512": "2sCCb7doXEwtYAbqzbF/8UAeDRMNmPaQbU2q50Psg1J9KzumyVVCgKQY8s53WIPTufNT0DpSe9QRvVjOzfDWBA==",
+      "type": "package",
+      "path": "system.codedom/4.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.CodeDom.dll",
+        "lib/netstandard2.0/System.CodeDom.dll",
+        "ref/net461/System.CodeDom.dll",
+        "ref/net461/System.CodeDom.xml",
+        "ref/netstandard2.0/System.CodeDom.dll",
+        "ref/netstandard2.0/System.CodeDom.xml",
+        "system.codedom.4.4.0.nupkg.sha512",
+        "system.codedom.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "System.Memory/4.5.3": {
@@ -1242,6 +1408,11 @@
       "path": "../FlipFlop.Helpers/FlipFlop.Helpers.csproj",
       "msbuildProject": "../FlipFlop.Helpers/FlipFlop.Helpers.csproj"
     },
+    "FlipFlop.Migrations/1.0.0": {
+      "type": "project",
+      "path": "../FlipFlop.Migrations/FlipFlop.Migrations.csproj",
+      "msbuildProject": "../FlipFlop.Migrations/FlipFlop.Migrations.csproj"
+    },
     "FlipFlop.Services/1.0.0": {
       "type": "project",
       "path": "../FlipFlop.Services/FlipFlop.Services.csproj",
@@ -1251,7 +1422,10 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "FlipFlop.EfCore >= 1.0.0",
-      "FlipFlop.Services >= 1.0.0"
+      "FlipFlop.Migrations >= 1.0.0",
+      "FlipFlop.Services >= 1.0.0",
+      "Microsoft.EntityFrameworkCore.Design >= 7.0.2",
+      "Microsoft.EntityFrameworkCore.Tools >= 7.0.2"
     ]
   },
   "packageFolders": {
@@ -1291,6 +1465,9 @@
             "C:\\Users\\User\\Desktop\\FlipFlop\\src\\FlipFlop.EfCore\\FlipFlop.EfCore.csproj": {
               "projectPath": "C:\\Users\\User\\Desktop\\FlipFlop\\src\\FlipFlop.EfCore\\FlipFlop.EfCore.csproj"
             },
+            "C:\\Users\\User\\Desktop\\FlipFlop\\src\\FlipFlop.Migrations\\FlipFlop.Migrations.csproj": {
+              "projectPath": "C:\\Users\\User\\Desktop\\FlipFlop\\src\\FlipFlop.Migrations\\FlipFlop.Migrations.csproj"
+            },
             "C:\\Users\\User\\Desktop\\FlipFlop\\src\\FlipFlop.Services\\FlipFlop.Services.csproj": {
               "projectPath": "C:\\Users\\User\\Desktop\\FlipFlop\\src\\FlipFlop.Services\\FlipFlop.Services.csproj"
             }
@@ -1306,6 +1483,20 @@
     "frameworks": {
       "net6.0": {
         "targetAlias": "net6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Design": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[7.0.2, )"
+          },
+          "Microsoft.EntityFrameworkCore.Tools": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[7.0.2, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

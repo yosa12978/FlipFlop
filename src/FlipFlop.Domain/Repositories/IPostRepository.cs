@@ -9,6 +9,6 @@ namespace FlipFlop.Domain.Repositories
 {
     public interface IPostRepository : IBaseRepository<Post, long>
     {
-
+        Task<List<Post>> GetUserPosts(long UserId);
     }
 }

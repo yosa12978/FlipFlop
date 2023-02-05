@@ -24,7 +24,6 @@ namespace FlipFlop.EfCore.Data
         protected override void OnConfiguring(DbContextOptionsBuilder builder)
         {
             base.OnConfiguring(builder);
-            builder.UseSqlite("Db Source = db.sqlite"); //  take this string from config file
         }
         protected override void OnModelCreating(ModelBuilder builder)
         {
@@ -47,6 +46,7 @@ namespace FlipFlop.EfCore.Data
                 .HasOne(x => x.Author)
                 .WithMany()
                 .HasForeignKey(x => x.AuthorId);
+                
             builder.Entity<Post>()
                 .HasMany<Image>()
                 .WithOne(x => x.Post)
@@ -71,6 +71,7 @@ namespace FlipFlop.EfCore.Data
                 .HasOne(x => x.Post)
                 .WithMany()
                 .HasForeignKey(x => x.PostId);
+
             builder.Entity<Image>()
                 .HasOne(x => x.Uploader)
                 .WithMany()

@@ -1,0 +1,17 @@
+C:\Users\User\Desktop\FlipFlop\src\FlipFlop.Services\bin\Debug\net6.0\FlipFlop.Services.deps.json
+C:\Users\User\Desktop\FlipFlop\src\FlipFlop.Services\bin\Debug\net6.0\FlipFlop.Services.dll
+C:\Users\User\Desktop\FlipFlop\src\FlipFlop.Services\bin\Debug\net6.0\FlipFlop.Services.pdb
+C:\Users\User\Desktop\FlipFlop\src\FlipFlop.Services\bin\Debug\net6.0\FlipFlop.Domain.dll
+C:\Users\User\Desktop\FlipFlop\src\FlipFlop.Services\bin\Debug\net6.0\FlipFlop.Helpers.dll
+C:\Users\User\Desktop\FlipFlop\src\FlipFlop.Services\bin\Debug\net6.0\FlipFlop.Domain.pdb
+C:\Users\User\Desktop\FlipFlop\src\FlipFlop.Services\bin\Debug\net6.0\FlipFlop.Helpers.pdb
+C:\Users\User\Desktop\FlipFlop\src\FlipFlop.Services\obj\Debug\net6.0\FlipFlop.Services.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\FlipFlop\src\FlipFlop.Services\obj\Debug\net6.0\FlipFlop.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\FlipFlop\src\FlipFlop.Services\obj\Debug\net6.0\FlipFlop.Services.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\FlipFlop\src\FlipFlop.Services\obj\Debug\net6.0\FlipFlop.Services.AssemblyInfo.cs
+C:\Users\User\Desktop\FlipFlop\src\FlipFlop.Services\obj\Debug\net6.0\FlipFlop.Services.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\FlipFlop\src\FlipFlop.Services\obj\Debug\net6.0\FlipFlop.Services.csproj.CopyComplete
+C:\Users\User\Desktop\FlipFlop\src\FlipFlop.Services\obj\Debug\net6.0\FlipFlop.Services.dll
+C:\Users\User\Desktop\FlipFlop\src\FlipFlop.Services\obj\Debug\net6.0\refint\FlipFlop.Services.dll
+C:\Users\User\Desktop\FlipFlop\src\FlipFlop.Services\obj\Debug\net6.0\FlipFlop.Services.pdb
+C:\Users\User\Desktop\FlipFlop\src\FlipFlop.Services\obj\Debug\net6.0\ref\FlipFlop.Services.dll

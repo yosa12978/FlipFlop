@@ -9,6 +9,6 @@ namespace FlipFlop.Domain.Repositories
 {
     public interface IImageRepository : IBaseRepository<Image, long>
     {
-
+        Task<List<Image>> GetPostImages(long PostId);
     }
 }

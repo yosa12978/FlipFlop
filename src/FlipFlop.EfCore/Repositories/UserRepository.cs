@@ -1,6 +1,7 @@
 using FlipFlop.Domain.Models;
 using FlipFlop.EfCore.Data;
 using FlipFlop.Helpers;
+using Microsoft.EntityFrameworkCore;
 
 namespace FlipFlop.EfCore.Repositories 
 {
@@ -21,6 +22,11 @@ namespace FlipFlop.EfCore.Repositories
         {
             return await Task.Run(() => _db.users.Any(x => x.Username == username && 
                                                            x.Password == CryptoHelper.CreateMD5(password)));
+        }
+
+        public async Task<User?> GetByUsernameAndPassword(string username, string passwordHash) 
+        {
+            return await _db.users.FirstOrDefaultAsync(u => u.Username == username && u.Password == passwordHash);
         }
     }
 }

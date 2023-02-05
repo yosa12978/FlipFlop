@@ -15,5 +15,6 @@ namespace FlipFlop.Domain.Models
         public List<Image> Images { get; set; } = default!;
         public long AuthorId { get; set; } = default!;
         public User Author { get; set; } = default!;
+        public bool NSFW { get; set; } = false;
     }
 }

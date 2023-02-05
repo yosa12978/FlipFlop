@@ -1,6 +1,11 @@
+using FlipFlop.EfCore;
+using FlipFlop.EfCore.Data;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
+builder.Services.AddEfCoreRepositories(builder.Configuration.GetConnectionString("Sqlte") ?? "Data Source = base.db");
 
 var app = builder.Build();
 
@@ -16,6 +21,7 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+app.UseAuthentication();
 
 app.MapControllerRoute(
     name: "default",

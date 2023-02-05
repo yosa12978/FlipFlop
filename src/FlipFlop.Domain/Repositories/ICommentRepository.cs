@@ -9,5 +9,6 @@ namespace FlipFlop.Domain.Repositories
 {
     public interface ICommentRepository : IBaseRepository<Comment, long>
     {
+        Task<List<Comment>> GetPostComments(long PostId);
     }
 }

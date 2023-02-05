@@ -11,5 +11,6 @@ namespace FlipFlop.Domain.Repositories
     {
         Task<bool> IsUserExist(string username, string password);
         Task<bool> IsUsernameTaken(string username);
+        Task<User?> GetByUsernameAndPassword(string username, string passwordHash);
     }
 }

@@ -1,0 +1,12 @@
+C:\Users\User\Desktop\FlipFlop\src\FlipFlop.Domain\bin\Debug\net6.0\FlipFlop.Domain.deps.json
+C:\Users\User\Desktop\FlipFlop\src\FlipFlop.Domain\bin\Debug\net6.0\FlipFlop.Domain.dll
+C:\Users\User\Desktop\FlipFlop\src\FlipFlop.Domain\bin\Debug\net6.0\FlipFlop.Domain.pdb
+C:\Users\User\Desktop\FlipFlop\src\FlipFlop.Domain\obj\Debug\net6.0\FlipFlop.Domain.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\FlipFlop\src\FlipFlop.Domain\obj\Debug\net6.0\FlipFlop.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\FlipFlop\src\FlipFlop.Domain\obj\Debug\net6.0\FlipFlop.Domain.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\FlipFlop\src\FlipFlop.Domain\obj\Debug\net6.0\FlipFlop.Domain.AssemblyInfo.cs
+C:\Users\User\Desktop\FlipFlop\src\FlipFlop.Domain\obj\Debug\net6.0\FlipFlop.Domain.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\FlipFlop\src\FlipFlop.Domain\obj\Debug\net6.0\FlipFlop.Domain.dll
+C:\Users\User\Desktop\FlipFlop\src\FlipFlop.Domain\obj\Debug\net6.0\refint\FlipFlop.Domain.dll
+C:\Users\User\Desktop\FlipFlop\src\FlipFlop.Domain\obj\Debug\net6.0\FlipFlop.Domain.pdb
+C:\Users\User\Desktop\FlipFlop\src\FlipFlop.Domain\obj\Debug\net6.0\ref\FlipFlop.Domain.dll
