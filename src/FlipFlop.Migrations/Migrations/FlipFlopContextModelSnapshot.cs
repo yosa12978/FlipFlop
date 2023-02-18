@@ -19,19 +19,20 @@ namespace FlipFlop.Migrations.Migrations
 
             modelBuilder.Entity("FlipFlop.Domain.Models.Comment", b =>
                 {
-                    b.Property<long>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
+                    b.Property<string>("Id")
+                        .HasColumnType("TEXT");
 
-                    b.Property<long>("AuthorId")
-                        .HasColumnType("INTEGER");
+                    b.Property<string>("AuthorId")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("Body")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<long>("PostId")
-                        .HasColumnType("INTEGER");
+                    b.Property<string>("PostId")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
 
                     b.HasKey("Id");
 
@@ -44,22 +45,23 @@ namespace FlipFlop.Migrations.Migrations
 
             modelBuilder.Entity("FlipFlop.Domain.Models.Image", b =>
                 {
-                    b.Property<long>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
+                    b.Property<string>("Id")
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("Path")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<long>("PostId")
-                        .HasColumnType("INTEGER");
+                    b.Property<string>("PostId")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
 
-                    b.Property<long?>("PostId1")
-                        .HasColumnType("INTEGER");
+                    b.Property<string>("PostId1")
+                        .HasColumnType("TEXT");
 
-                    b.Property<long>("UploaderId")
-                        .HasColumnType("INTEGER");
+                    b.Property<string>("UploaderId")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
 
                     b.HasKey("Id");
 
@@ -74,19 +76,25 @@ namespace FlipFlop.Migrations.Migrations
 
             modelBuilder.Entity("FlipFlop.Domain.Models.Post", b =>
                 {
-                    b.Property<long>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
+                    b.Property<string>("Id")
+                        .HasColumnType("TEXT");
 
-                    b.Property<long>("AuthorId")
-                        .HasColumnType("INTEGER");
+                    b.Property<string>("AuthorId")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("Body")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
+                    b.Property<int>("CommentCount")
+                        .HasColumnType("INTEGER");
+
                     b.Property<bool>("NSFW")
                         .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("PubDate")
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("Title")
                         .IsRequired()
@@ -101,11 +109,14 @@ namespace FlipFlop.Migrations.Migrations
 
             modelBuilder.Entity("FlipFlop.Domain.Models.User", b =>
                 {
-                    b.Property<long>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER");
+                    b.Property<string>("Id")
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Role")
                         .IsRequired()
                         .HasColumnType("TEXT");
 

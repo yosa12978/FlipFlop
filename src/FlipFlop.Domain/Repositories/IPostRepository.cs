@@ -7,8 +7,9 @@ using System.Threading.Tasks;
 
 namespace FlipFlop.Domain.Repositories
 {
-    public interface IPostRepository : IBaseRepository<Post, long>
+    public interface IPostRepository : IBaseRepository<Post, string>
     {
-        Task<List<Post>> GetUserPosts(long UserId);
+        Task<List<Post>> GetUserPosts(string UserId);
+        Task<List<Post>> SearchPost(string q);
     }
 }

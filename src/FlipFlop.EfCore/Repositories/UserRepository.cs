@@ -1,11 +1,10 @@
 using FlipFlop.Domain.Models;
 using FlipFlop.EfCore.Data;
-using FlipFlop.Helpers;
 using Microsoft.EntityFrameworkCore;
 
 namespace FlipFlop.EfCore.Repositories 
 {
-    public class UserRepository : BaseRepository<User, long>, IUserRepository
+    public class UserRepository : BaseRepository<User, string>, IUserRepository
     {
         
         public UserRepository(FlipFlopContext db) : base(db)
@@ -20,13 +19,19 @@ namespace FlipFlop.EfCore.Repositories
 
         public async Task<bool> IsUserExist(string username, string password)
         {
-            return await Task.Run(() => _db.users.Any(x => x.Username == username && 
-                                                           x.Password == CryptoHelper.CreateMD5(password)));
+            return await Task.Run(() => _db.users.Any(x => x.Username == username &&  // ? am i need this method
+                                                           x.Password == password)); // todo rewrite this method
+                                                           
         }
 
-        public async Task<User?> GetByUsernameAndPassword(string username, string passwordHash) 
+        public async Task<User?> GetUserByUsername(string username)
         {
-            return await _db.users.FirstOrDefaultAsync(u => u.Username == username && u.Password == passwordHash);
+            return await _db.users.FirstOrDefaultAsync(x => x.Username == username);
+        }
+
+        public async Task<List<User>> SearchUserByUsername(string username)
+        {
+            return await _db.users.Where(x => x.Username.Contains(username)).ToListAsync();
         }
     }
 }

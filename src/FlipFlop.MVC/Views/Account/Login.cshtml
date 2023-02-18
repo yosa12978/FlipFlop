@@ -1,0 +1,16 @@
+@{
+    ViewData["Title"] = "FlipFlop - Login";
+}
+
+<h1>Login</h1>
+@if (ViewBag.Error != null)
+{
+    <div class="alert alert-danger" role="alert" style="width: 100%; max-width:500px;">
+        @ViewBag.Error
+    </div>
+}
+<form action="/account/login" method="post" style="width: 100%; max-width:500px;">
+    <input name="username" class="form-control" placeholder="username"/><br>
+    <input name="password" type="password" class="form-control" placeholder="password"/><br>
+    <button type="submit" class="btn btn-danger" style="width: 100%;">Login</button>
+</form>

@@ -31,6 +31,12 @@ namespace FlipFlop.EfCore.Data
             builder.Entity<Post>().HasKey(x => x.Id);
             builder.Entity<Comment>().HasKey(x => x.Id);
             builder.Entity<Image>().HasKey(x => x.Id);
+            
+            
+            
+            builder.Entity<Post>().Navigation(x => x.Author).AutoInclude();
+            builder.Entity<Comment>().Navigation(x => x.Author).AutoInclude();
+
 
             builder.Entity<Comment>()
                 .HasOne(x => x.Author)

@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "FlipFlop";
+}
+<style>
+    .badge {
+        background-color: #d32828;
+        color: white;
+        padding: 4px 8px;
+        text-align: center;
+        border-radius: 5px;
+    }
+    .postcard {
+        max-width: 1000px;
+
+        width: 100%;
+    }
+</style>
+<h1>Search Results</h1>
+
+@if (ViewBag.Posts != null){
+    @foreach (FlipFlop.Domain.Models.Post p in ViewBag.Posts)
+    {
+        <div class="card postcard border-secondary">
+            <div class="card-body">
+                <div style="float:left; margin-right: 15px; width:100%; max-width:100px;" class="text-center">
+                <a href="/users/@p.Author.Username">
+                    <img style="width:50px; height:auto;" src="https://api.dicebear.com/5.x/identicon/svg?seed=@p.Author.Username&backgroundColor=ffffff"/></a>
+                    <br><span><a href="/users/@p.Author.Id" class="text-dark"><b>@p.Author.Username</b></a></span>
+                </div>
+                <span><a href="/posts/detail/@p.Id" class="text-dark"><b>@p.Title</b></a></span>
+                @if (p.NSFW)
+                {
+                    <div class="badge" >NSFW</div>
+                }
+                <br><span>Date: @p.PubDate.ToString("dd/MM/yyyy HH:mm")</span>
+                <br><span><a href="/posts/detail/@p.Id" class="text-dark"><b>Comments: @p.CommentCount</b></a></span>
+            </div>
+        </div><br>
+    }
+}

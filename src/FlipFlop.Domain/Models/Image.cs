@@ -7,16 +7,16 @@ using System.Threading.Tasks;
 
 namespace FlipFlop.Domain.Models
 {
-    public class Image : BaseModel<long>
+    public class Image : BaseModel<string>
     {
         [Required]
         public string Path { get; set; } = default!;
         [Required]
-        public long UploaderId { get; set; } = default!;
+        public string UploaderId { get; set; } = default!;
         [Required]
         public User Uploader { get; set; } = default!;
         [Required]
-        public long PostId { get; set; } = default!;
+        public string PostId { get; set; } = default!;
         [Required]
         public Post Post { get; set; } = default!;
     }

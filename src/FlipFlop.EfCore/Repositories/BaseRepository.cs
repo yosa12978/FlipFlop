@@ -12,24 +12,23 @@ namespace FlipFlop.EfCore.Repositories
         {
             _db = db;
         }
-        public async Task<T?> GetById(ID id) 
+        public virtual async Task<T?> GetById(ID id) 
         {
             return await _db.Set<T>()
                 .FindAsync(id);
         }
-        public async Task<List<T>> GetAll()
+        public virtual IQueryable<T> GetAll()
         {
-            return await _db.Set<T>()
-                .OrderByDescending(x => x.Id)
-                .ToListAsync();
+            return _db.Set<T>()
+                .OrderByDescending(x => x.Id);
         }
-        public async Task<T?> Create(T entity)
+        public virtual async Task<T?> Create(T entity)
         {
             var e = _db.Set<T>().Add(entity);
             await _db.SaveChangesAsync();
             return e.Entity;
         }
-        public async Task<T?> Update(ID id, T entity)
+        public virtual async Task<T?> Update(ID id, T entity)
         {
             T? e = await this.GetById(id);
             if (e == null)
@@ -38,7 +37,7 @@ namespace FlipFlop.EfCore.Repositories
             var updateResult = _db.Set<T>().Update(entity);
             return updateResult.Entity;
         }
-        public async Task Delete(ID id)
+        public virtual async Task Delete(ID id)
         {
             T? e = await this.GetById(id);
             if (e == null)

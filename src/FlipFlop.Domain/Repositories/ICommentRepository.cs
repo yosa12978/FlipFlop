@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace FlipFlop.Domain.Repositories
 {
-    public interface ICommentRepository : IBaseRepository<Comment, long>
+    public interface ICommentRepository : IBaseRepository<Comment, string>
     {
-        Task<List<Comment>> GetPostComments(long PostId);
+        Task<List<Comment>> GetPostComments(string PostId);
     }
 }

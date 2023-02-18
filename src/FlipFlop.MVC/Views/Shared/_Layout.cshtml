@@ -3,42 +3,88 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - FlipFlop.MVC</title>
-    @* <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/FlipFlop.MVC.styles.css" asp-append-version="true" /> *@
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">FlipFlop.MVC</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                </div>
+    <style>
+        .contentt {
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-top: 10px;
+        }
+        .footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            white-space: nowrap;
+            line-height: 60px;
+        }
+        * {
+            word-wrap: break-word;
+        }
+        h1 {
+            font-weight: bold;
+        }
+        a {
+            text-decoration: none;
+        }
+
+    </style>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #212529;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/"><img src="~/Logo3.PNG" style="width: 200px; height: auto;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars text-light"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link text-light" aria-current="page" href="/"><i class="fas fa-home" style="margin-right: 3px;"></i>Home</a>
+                </li>
+
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <li class="nav-item">
+                    <a class="nav-link text-light" href="/posts/create"><i class="fas fa-plus-square" style="margin-right: 3px;"></i>New Post</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link text-light" href="/users/@User.Identity.Name">
+                    <img style="width:20px; height:20px; margin-right: 3px; border-radius:10px" src="https://api.dicebear.com/5.x/identicon/svg?seed=@User.Identity.Name&backgroundColor=ffffff"/>@User.Identity.Name</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link text-danger" href="/account/logout"><i class="fas fa-sign-out-alt" style="margin-right: 3px;"></i>Logout</a>
+                    </li>
+                }
+                else
+                {
+                    <li class="nav-item">
+                    <a class="nav-link text-danger" href="/account/login"><i class="fas fa-sign-in-alt" style="margin-right: 3px;"></i>Login</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link text-danger" href="/account/signup"><i class="fas fa-user-plus" style="margin-right: 3px;"></i>Signup</a>
+                    </li>
+                }
+
+            </ul>
+            <form class="d-flex" role="search" action="/posts/search" method="get">
+                <input name="q" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
             </div>
-        </nav>
-    </header>
-    <div class="container">
+        </div>
+    </nav>
+    <div class="contentt">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
 
     <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2023 - FlipFlop.MVC - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        <div style="margin-left: 15px;">
+            &copy; 2023 - FlipFlop - <a href="/privacy" class="text-secondary">Privacy</a>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

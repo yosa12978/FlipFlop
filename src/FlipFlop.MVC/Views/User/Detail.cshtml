@@ -1,0 +1,15 @@
+@{
+    ViewData["Title"] = ViewBag.User.Username + " - FlipFlop";
+}
+
+<h1>ViewBag.User.Username</h1>
+
+
+@foreach (FlipFlop.Domain.Models.Post p in ViewBag.Posts)
+{
+    <span>p.Title</span>
+    @if (p.NSFW)
+    {
+        <span>NSFW</span>
+    }
+}

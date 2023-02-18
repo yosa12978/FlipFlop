@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace FlipFlop.Domain.Models
 {
-    public class User : BaseModel<long>
+    public class User : BaseModel<string>
     {
         [Required]
         public string Username { get; set; } = default!;
@@ -15,5 +15,6 @@ namespace FlipFlop.Domain.Models
         public string Password { get; set; } = default!;
         [Required]
         public string Salt { get; set; } = default!;
+        public string Role { get; set; } = Roles.USER;
     }
 }

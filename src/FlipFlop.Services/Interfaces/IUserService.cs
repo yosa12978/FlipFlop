@@ -8,8 +8,10 @@ namespace FlipFlop.Services.Interfaces
 {
     public interface IUserService
     {
+        Task<User?> GetUserByUsername(string username);
         Task<User?> GetUser(string username, string password);
-        Task<User?> GetUserById(long id);
+        Task<User?> GetUserById(string id);
+        Task<List<User>> SearchByUsername(string username);
         Task<User?> CreateUser(string Username, string Password);
         Task DeleteUser(string Username, string Password);
     }

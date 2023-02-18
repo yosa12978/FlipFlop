@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace FlipFlop.Domain.Repositories
 {
-    public interface IImageRepository : IBaseRepository<Image, long>
+    public interface IImageRepository : IBaseRepository<Image, string>
     {
-        Task<List<Image>> GetPostImages(long PostId);
+        Task<List<Image>> GetPostImages(string PostId);
     }
 }

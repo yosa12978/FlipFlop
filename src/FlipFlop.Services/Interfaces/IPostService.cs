@@ -9,10 +9,11 @@ namespace FlipFlop.Services.Interfaces
     public interface IPostService
     {
         Task<List<Post>> GetAll();
-        Task<List<Post>> GetUserPosts(long userId);
-        Task<Post?> GetPostById(long id);
+        Task<List<Post>> GetUserPosts(string userId);
+        Task<Post?> GetPostById(string id);
         Task<Post?> CreatePost(Post post);
-        Task DeletePost(long id, long userId);
-        Task<Post?> UpdatePost(long postId, Post updatedPost); // todo complete this
+        Task DeletePost(string id, string userId);
+        Task<Post?> UpdatePost(string postId, Post updatedPost); // todo complete this
+        Task<List<Post>> SearchPost(string q);
     }
 }

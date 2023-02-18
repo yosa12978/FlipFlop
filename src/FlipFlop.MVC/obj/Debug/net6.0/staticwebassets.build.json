@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "t3c93F+Mg4wUUiJCAarTrdeNn3iQYi7+FhF5PlevQ7Y=",
+  "Hash": "NKJosT/R6vGcze2uzmLBU3pnM11HVYPtb2VukAihCPg=",
   "Source": "FlipFlop.MVC",
   "BasePath": "_content/FlipFlop.MVC",
   "Mode": "Default",
@@ -51,6 +51,23 @@
       "OriginalItemSpec": "C:\\Users\\User\\Desktop\\FlipFlop\\src\\FlipFlop.MVC\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\FlipFlop.MVC.bundle.scp.css"
     },
     {
+      "Identity": "C:\\Users\\User\\Desktop\\FlipFlop\\src\\FlipFlop.MVC\\wwwroot\\col.PNG",
+      "SourceId": "FlipFlop.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\FlipFlop\\src\\FlipFlop.MVC\\wwwroot\\",
+      "BasePath": "_content/FlipFlop.MVC",
+      "RelativePath": "col.PNG",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\col.PNG"
+    },
+    {
       "Identity": "C:\\Users\\User\\Desktop\\FlipFlop\\src\\FlipFlop.MVC\\wwwroot\\css\\site.css",
       "SourceId": "FlipFlop.MVC",
       "SourceType": "Discovered",
@@ -68,12 +85,12 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\FlipFlop\\src\\FlipFlop.MVC\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\User\\Desktop\\FlipFlop\\src\\FlipFlop.MVC\\wwwroot\\FF.PNG",
       "SourceId": "FlipFlop.MVC",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\User\\Desktop\\FlipFlop\\src\\FlipFlop.MVC\\wwwroot\\",
       "BasePath": "_content/FlipFlop.MVC",
-      "RelativePath": "favicon.ico",
+      "RelativePath": "FF.PNG",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -82,7 +99,41 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\favicon.ico"
+      "OriginalItemSpec": "wwwroot\\FF.PNG"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Desktop\\FlipFlop\\src\\FlipFlop.MVC\\wwwroot\\FlipFlop1.PNG",
+      "SourceId": "FlipFlop.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\FlipFlop\\src\\FlipFlop.MVC\\wwwroot\\",
+      "BasePath": "_content/FlipFlop.MVC",
+      "RelativePath": "FlipFlop1.PNG",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\FlipFlop1.PNG"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Desktop\\FlipFlop\\src\\FlipFlop.MVC\\wwwroot\\FlipFlop2.PNG",
+      "SourceId": "FlipFlop.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\FlipFlop\\src\\FlipFlop.MVC\\wwwroot\\",
+      "BasePath": "_content/FlipFlop.MVC",
+      "RelativePath": "FlipFlop2.PNG",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\FlipFlop2.PNG"
     },
     {
       "Identity": "C:\\Users\\User\\Desktop\\FlipFlop\\src\\FlipFlop.MVC\\wwwroot\\js\\site.js",
@@ -1069,6 +1120,57 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Desktop\\FlipFlop\\src\\FlipFlop.MVC\\wwwroot\\Logo1.PNG",
+      "SourceId": "FlipFlop.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\FlipFlop\\src\\FlipFlop.MVC\\wwwroot\\",
+      "BasePath": "_content/FlipFlop.MVC",
+      "RelativePath": "Logo1.PNG",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Logo1.PNG"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Desktop\\FlipFlop\\src\\FlipFlop.MVC\\wwwroot\\Logo2.PNG",
+      "SourceId": "FlipFlop.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\FlipFlop\\src\\FlipFlop.MVC\\wwwroot\\",
+      "BasePath": "_content/FlipFlop.MVC",
+      "RelativePath": "Logo2.PNG",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Logo2.PNG"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Desktop\\FlipFlop\\src\\FlipFlop.MVC\\wwwroot\\Logo3.PNG",
+      "SourceId": "FlipFlop.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\FlipFlop\\src\\FlipFlop.MVC\\wwwroot\\",
+      "BasePath": "_content/FlipFlop.MVC",
+      "RelativePath": "Logo3.PNG",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Logo3.PNG"
     }
   ]
 }

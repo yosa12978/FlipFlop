@@ -7,14 +7,14 @@ using System.Threading.Tasks;
 
 namespace FlipFlop.Domain.Models
 {
-    public class Comment : BaseModel<long>
+    public class Comment : BaseModel<string>
     {
         [Required]
-        public long PostId { get; set; }
+        public string PostId { get; set; } = default!;
         [Required]
         public string Body { get; set; } = default!;
         [Required]
-        public long AuthorId { get; set; }
+        public string AuthorId { get; set; } = default!;
         [Required]
         public User Author { get; set; } = default!;
     }

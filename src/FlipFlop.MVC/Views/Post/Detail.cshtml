@@ -1,0 +1,43 @@
+@{
+    ViewData["Title"] = @ViewBag.Post.Title + "FlipFlop";
+}
+<style>
+    .badge {
+        background-color: #d32828;
+        color: white;
+        padding: 4px 8px;
+        text-align: center;
+        border-radius: 5px;
+    }
+    .postcard {
+        max-width: 1000px;
+
+        width: 100%;
+    }
+</style>
+        
+        
+<div class="card postcard border-secondary">
+    <div class="card-body">
+        <div style="float:left; margin-right: 15px; width:100%; max-width:100px;" class="text-center">
+            <a href="/users/@ViewBag.Post.Author.Username">
+                <img style="width:50px; height:auto;" src="https://api.dicebear.com/5.x/identicon/svg?seed=@ViewBag.Post.Author.Username&backgroundColor=ffffff"/></a>
+                <br><span><a href="/users/@ViewBag.Post.Author.Id" class="text-dark"><b>@ViewBag.Post.Author.Username</b></a></span>
+            </div>
+            <span><a href="/posts/detail/@ViewBag.Post.Id" class="text-dark"><b>@ViewBag.Post.Title</b></a></span>
+            @if (ViewBag.Post.Body != null){
+                <p><br/>@Html.Raw(ViewBag.Post.Body.Replace("\r\n", "<br/>"))</p>
+            }
+            @if (ViewBag.Post.NSFW)
+            {
+                <div class="badge" >NSFW</div>
+            }
+            <br><span>Date: @ViewBag.Post.PubDate.ToString("MM/dd/yyyy HH:mm")</span>
+        </div>
+</div><br>
+
+<h3><b>Comments: @ViewBag.Post.CommentCount</b></h3>
+@* @foreach (var item in ViewBag.Comments)
+{
+    
+} *@

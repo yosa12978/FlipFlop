@@ -7,10 +7,11 @@ using System.Threading.Tasks;
 
 namespace FlipFlop.Domain.Repositories
 {
-    public interface IUserRepository : IBaseRepository<User, long>
+    public interface IUserRepository : IBaseRepository<User, string>
     {
         Task<bool> IsUserExist(string username, string password);
         Task<bool> IsUsernameTaken(string username);
-        Task<User?> GetByUsernameAndPassword(string username, string passwordHash);
+        Task<User?> GetUserByUsername(string username);
+        Task<List<User>> SearchUserByUsername(string username);
     }
 }

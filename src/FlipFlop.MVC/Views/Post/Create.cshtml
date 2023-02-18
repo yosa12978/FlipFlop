@@ -1,0 +1,17 @@
+@{
+    ViewData["Title"] = "FlipFlop - Create Post";
+}
+<h1>Create Post</h1>
+@if (ViewBag.Error != null)
+{
+    <div class="alert alert-danger" role="alert">
+        @ViewBag.Error
+    </div>
+}
+<form action="/posts/create" method="post" style="width:100%; max-width:600px;">
+    <input name="title" class="form-control" placeholder="Title"/><br>
+    <textarea name="body" type="password" class="form-control" placeholder="Text" style="height: 150px;"></textarea>
+    <label>NSFW: </label>
+    <input name="nsfw" type="checkbox"/><br><br>
+    <button type="submit" class="btn btn-outline-danger" style="width:100%; max-width:600px;">Create</button>
+</form>
