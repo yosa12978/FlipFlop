@@ -10,17 +10,25 @@ namespace FlipFlop.MVC.Controllers
     {
         private readonly IPostService _postService;
         private readonly IUserService _userService;
+        private readonly ICommentService _commentService;
 
-        public PostController(IPostService postService, IUserService userService)
+        public PostController(IPostService postService, IUserService userService, ICommentService commentService)
         {
             _userService = userService;
             _postService = postService;
+            _commentService = commentService;
         }
 
         [HttpGet("/posts/detail/{id}")]
         public async Task<IActionResult> Detail([FromRoute]string id)
         {
-            ViewBag.Post = await _postService.GetPostById(id);
+            Post? post = await _postService.GetPostById(id);
+            if (post == null)
+            {
+                return NotFound("not found "+id);
+            }
+            ViewBag.Post = post;
+            ViewBag.Comments = await _commentService.GetPostComments(id);
             return View();
         }
 

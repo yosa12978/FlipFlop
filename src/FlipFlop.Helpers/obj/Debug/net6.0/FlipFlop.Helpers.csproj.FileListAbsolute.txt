@@ -10,3 +10,15 @@ C:\Users\User\Desktop\FlipFlop\src\FlipFlop.Helpers\obj\Debug\net6.0\FlipFlop.He
 C:\Users\User\Desktop\FlipFlop\src\FlipFlop.Helpers\obj\Debug\net6.0\refint\FlipFlop.Helpers.dll
 C:\Users\User\Desktop\FlipFlop\src\FlipFlop.Helpers\obj\Debug\net6.0\FlipFlop.Helpers.pdb
 C:\Users\User\Desktop\FlipFlop\src\FlipFlop.Helpers\obj\Debug\net6.0\ref\FlipFlop.Helpers.dll
+C:\Users\1\Desktop\FlipFlop\src\FlipFlop.Helpers\bin\Debug\net6.0\FlipFlop.Helpers.deps.json
+C:\Users\1\Desktop\FlipFlop\src\FlipFlop.Helpers\bin\Debug\net6.0\FlipFlop.Helpers.dll
+C:\Users\1\Desktop\FlipFlop\src\FlipFlop.Helpers\bin\Debug\net6.0\FlipFlop.Helpers.pdb
+C:\Users\1\Desktop\FlipFlop\src\FlipFlop.Helpers\obj\Debug\net6.0\FlipFlop.Helpers.csproj.AssemblyReference.cache
+C:\Users\1\Desktop\FlipFlop\src\FlipFlop.Helpers\obj\Debug\net6.0\FlipFlop.Helpers.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\1\Desktop\FlipFlop\src\FlipFlop.Helpers\obj\Debug\net6.0\FlipFlop.Helpers.AssemblyInfoInputs.cache
+C:\Users\1\Desktop\FlipFlop\src\FlipFlop.Helpers\obj\Debug\net6.0\FlipFlop.Helpers.AssemblyInfo.cs
+C:\Users\1\Desktop\FlipFlop\src\FlipFlop.Helpers\obj\Debug\net6.0\FlipFlop.Helpers.csproj.CoreCompileInputs.cache
+C:\Users\1\Desktop\FlipFlop\src\FlipFlop.Helpers\obj\Debug\net6.0\FlipFlop.Helpers.dll
+C:\Users\1\Desktop\FlipFlop\src\FlipFlop.Helpers\obj\Debug\net6.0\refint\FlipFlop.Helpers.dll
+C:\Users\1\Desktop\FlipFlop\src\FlipFlop.Helpers\obj\Debug\net6.0\FlipFlop.Helpers.pdb
+C:\Users\1\Desktop\FlipFlop\src\FlipFlop.Helpers\obj\Debug\net6.0\ref\FlipFlop.Helpers.dll

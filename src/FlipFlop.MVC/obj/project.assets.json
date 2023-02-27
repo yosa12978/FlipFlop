@@ -1429,27 +1429,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\1\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Desktop\\FlipFlop\\src\\FlipFlop.MVC\\FlipFlop.MVC.csproj",
+      "projectUniqueName": "C:\\Users\\1\\Desktop\\FlipFlop\\src\\FlipFlop.MVC\\FlipFlop.MVC.csproj",
       "projectName": "FlipFlop.MVC",
-      "projectPath": "C:\\Users\\User\\Desktop\\FlipFlop\\src\\FlipFlop.MVC\\FlipFlop.MVC.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Desktop\\FlipFlop\\src\\FlipFlop.MVC\\obj\\",
+      "projectPath": "C:\\Users\\1\\Desktop\\FlipFlop\\src\\FlipFlop.MVC\\FlipFlop.MVC.csproj",
+      "packagesPath": "C:\\Users\\1\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\1\\Desktop\\FlipFlop\\src\\FlipFlop.MVC\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\1\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -1462,14 +1455,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\User\\Desktop\\FlipFlop\\src\\FlipFlop.EfCore\\FlipFlop.EfCore.csproj": {
-              "projectPath": "C:\\Users\\User\\Desktop\\FlipFlop\\src\\FlipFlop.EfCore\\FlipFlop.EfCore.csproj"
+            "C:\\Users\\1\\Desktop\\FlipFlop\\src\\FlipFlop.EfCore\\FlipFlop.EfCore.csproj": {
+              "projectPath": "C:\\Users\\1\\Desktop\\FlipFlop\\src\\FlipFlop.EfCore\\FlipFlop.EfCore.csproj"
             },
-            "C:\\Users\\User\\Desktop\\FlipFlop\\src\\FlipFlop.Migrations\\FlipFlop.Migrations.csproj": {
-              "projectPath": "C:\\Users\\User\\Desktop\\FlipFlop\\src\\FlipFlop.Migrations\\FlipFlop.Migrations.csproj"
+            "C:\\Users\\1\\Desktop\\FlipFlop\\src\\FlipFlop.Migrations\\FlipFlop.Migrations.csproj": {
+              "projectPath": "C:\\Users\\1\\Desktop\\FlipFlop\\src\\FlipFlop.Migrations\\FlipFlop.Migrations.csproj"
             },
-            "C:\\Users\\User\\Desktop\\FlipFlop\\src\\FlipFlop.Services\\FlipFlop.Services.csproj": {
-              "projectPath": "C:\\Users\\User\\Desktop\\FlipFlop\\src\\FlipFlop.Services\\FlipFlop.Services.csproj"
+            "C:\\Users\\1\\Desktop\\FlipFlop\\src\\FlipFlop.Services\\FlipFlop.Services.csproj": {
+              "projectPath": "C:\\Users\\1\\Desktop\\FlipFlop\\src\\FlipFlop.Services\\FlipFlop.Services.csproj"
             }
           }
         }
@@ -1515,7 +1508,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }
